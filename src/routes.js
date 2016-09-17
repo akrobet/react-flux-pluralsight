@@ -16,6 +16,7 @@ var routes = (
     <Route name="manageAuthor" path="author/:id" handler={require('./components/authors/manageAuthorPage')} />
     <Route name="about" handler={require('./components/about/aboutPage')} />
     <Route name="authors/" handler={require('./components/about/aboutPage')} />
+    <Route name="courses" handler={require('./components/courses/coursePage')} />
     <NotFoundRoute handler={require('./components/NotFoundRoute')} />
     <Redirect from="about-us" to="about" /> //redirect for retired urls
     <Redirect from="awthurs" to="authors" /> //redirect for typos
