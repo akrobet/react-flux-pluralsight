@@ -6,7 +6,8 @@ module.exports = {
 			watchHref: "http://www.pluralsight.com/courses/writing-clean-code-humans",
 			author: {
 				id: "cory-house",
-				name: "Cory House"
+				firstName: 'Cory',
+				lastName: 'House'
 			},
 			length: "3:10",
 			category: "Software Practices"
@@ -16,8 +17,9 @@ module.exports = {
 			title: "Architecting Applications for the Real World",
 			watchHref: "http://www.pluralsight.com/courses/architecting-applications-dotnet",
 			author: {
-				id: "cory-house",
-				name: "Cory House"
+					id: 'scott-allen',
+					firstName: 'Scott',
+					lastName: 'Allen'
 			},
 			length: "2:52",
 			category: "Software Architecture"
@@ -27,8 +29,9 @@ module.exports = {
 			title: "Becoming an Outlier: Reprogramming the Developer Mind",
 			watchHref: "http://www.pluralsight.com/courses/career-reboot-for-developer-mind",
 			author: {
-				id: "cory-house",
-				name: "Cory House"
+					id: 'cory-house',
+					firstName: 'Cory',
+					lastName: 'House'
 			},
 			length: "2:30",
 			category: "Career"
@@ -38,8 +41,9 @@ module.exports = {
 			title: "Web Component Fundamentals",
 			watchHref: "http://www.pluralsight.com/courses/web-components-shadow-dom",
 			author: {
-				id: "cory-house",
-				name: "Cory House"
+					id: 'cory-house',
+					firstName: 'Cory',
+					lastName: 'House'
 			},
 			length: "5:10",
 			category: "HTML5"

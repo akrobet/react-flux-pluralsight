@@ -17,6 +17,8 @@ var routes = (
     <Route name="about" handler={require('./components/about/aboutPage')} />
     <Route name="authors/" handler={require('./components/about/aboutPage')} />
     <Route name="courses" handler={require('./components/courses/coursePage')} />
+    <Route name="manageCourse" path="course/:id" handler={require('./components/courses/manageCoursePage')} />
+    <Route name="addCourse" path="course" handler={require('./components/courses/manageCoursePage')} />
     <NotFoundRoute handler={require('./components/NotFoundRoute')} />
     <Redirect from="about-us" to="about" /> //redirect for retired urls
     <Redirect from="awthurs" to="authors" /> //redirect for typos

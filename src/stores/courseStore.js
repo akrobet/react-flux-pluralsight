@@ -35,10 +35,28 @@ Dispatcher.register(function(action) {
   switch(action.actionType) {
     case ActionTypes.INITIALIZE:
           _courses = action.initialData.courses;
+          break;
+    case ActionTypes.CREATE_COURSE:
+          _courses.push(action.course);
+          CourseStore.emitChange();
+          break;
+
+    case ActionTypes.UPDATE_COURSE:
+          var existingCourse = _.find(_courses, {id: action.course.id});
+          var existingCourseIndex = _.indexOf(_courses, existingCourse);
+          _courses.splice(existingCourseIndex, 1, action.course);
+          CourseStore.emitChange();
+          break;
+
+    case ActionTypes.DELETE_COURSE:
+          _.remove(_courses, function(course) {
+              return action.id === course.id;
+          });
           CourseStore.emitChange();
           break;
 
     default:
+			return true;
   }
 });
 
